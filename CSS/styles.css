@@ -1,0 +1,128 @@
+@import url(/color-picker.css);
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+  --darker-color: #222831;
+  --dark-color: #393e46;
+  --main-color: #00adb5;
+  --secondry-color: #00fff5;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--dark-color);
+}
+
+.btns {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+  border: none;
+  box-shadow: 1px 5px 10px var(--main-color);
+}
+
+.btn:hover {
+  box-shadow: 1px 5px 20px var(--secondry-color);
+}
+
+/* btns */
+
+.toggle-container {
+  align-items: center;
+  display: flex;
+  margin: 10px 0;
+  width: 200px;
+}
+
+.toggle {
+  visibility: hidden;
+}
+
+.label {
+  background-color: var(--main-color);
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-block;
+  height: 40px;
+  margin: 0 15px 0;
+  position: relative;
+  width: 80px;
+}
+
+.toggle:checked + label {
+  background-color: var(--secondry-color);
+}
+
+.ball {
+  align-items: center;
+  animation: slideOff 0.3s linear forwards;
+  background-color: #fff;
+  border-radius: 50%;
+  height: 34px;
+  justify-content: center;
+  left: 3px;
+  position: absolute;
+  top: 3px;
+  width: 34px;
+}
+
+.toggle:checked + label .ball {
+  animation: slideOn 0.3s linear forwards;
+}
+
+@keyframes slideOn {
+  0% {
+    transform: translateX(0) scale(1);
+  }
+  50% {
+    transform: translateX(20px) scale(1.2);
+  }
+  100% {
+    transform: translateX(40px) scale(1);
+  }
+}
+
+@keyframes slideOff {
+  0% {
+    transform: translateX(40px) scale(1);
+  }
+  50% {
+    transform: translateX(20px) scale(1.2);
+  }
+  100% {
+    transform: translateX(0) scale(1);
+  }
+}
+/* end of btns */
+
+/* Tables */
+.color-table {
+  position: relative;
+  box-shadow: inset 5px 5px 10px 10px var(--darker-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+}
+.text-color {
+  display: block;
+  text-align: center;
+  padding: 25px;
+  color: var(--secondry-color);
+}
+.pickr {
+  padding-bottom: 50px;
+}
