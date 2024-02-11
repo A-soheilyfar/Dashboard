@@ -12,7 +12,12 @@
 }
 
 body {
-  background-color: var(--dark-color);
+  background: url(/images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  font-family: Roboto;
 }
 
 .btns {
