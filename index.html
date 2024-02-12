@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="/CSS/styles.css" />
   </head>
+
   <body>
     <div class="container">
       <div class="color-table">
@@ -15,47 +16,49 @@
       </div>
       <div class="volume"></div>
       <div class="btns">
+        <h2 class="text-color">Choose Your Mode</h2>
         <div class="toggle-container">
           <input type="checkbox" id="good" class="toggle" />
           <label for="good" class="label">
             <div class="ball"></div>
           </label>
-          <span>Good</span>
+          <span class="btn-text"><b>Good</b></span>
         </div>
         <div class="toggle-container">
           <input type="checkbox" id="cheap" class="toggle" />
           <label for="cheap" class="label">
             <div class="ball"></div>
           </label>
-          <span>Cheap</span>
+          <span class="btn-text"><b>Cheap</b></span>
         </div>
         <div class="toggle-container">
           <input type="checkbox" id="fast" class="toggle" />
           <label for="fast" class="label">
             <div class="ball"></div>
           </label>
-          <span>Fast</span>
-        </div>
-
-        <div class="toggle-container">
-          <input type="checkbox" id="fast" class="toggle" />
-          <label for="fast" class="label">
-            <div class="ball"></div>
-          </label>
-          <span>Fast</span>
+          <span class="btn-text"><b>Fast</b></span>
         </div>
 
         <div class="toggle-container">
-          <input type="checkbox" id="fast" class="toggle" />
-          <label for="fast" class="label">
+          <input type="checkbox" id="super" class="toggle" />
+          <label for="super" class="label">
             <div class="ball"></div>
           </label>
-          <span>Fast</span>
+          <span class="btn-text"><b>Super</b></span>
+        </div>
+
+        <div class="toggle-container">
+          <input type="checkbox" id="perfect" class="toggle" />
+          <label for="perfect" class="label">
+            <div class="ball"></div>
+          </label>
+          <span class="btn-text"><b>Perfect</b></span>
         </div>
       </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
-    <script src="./app.js"></script>
+
+    <script src="./index.js"></script>
   </body>
 </html>

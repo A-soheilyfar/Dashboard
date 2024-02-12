@@ -39,7 +39,7 @@ const pickr = Pickr.create({
   },
 });
 
-// Btns
+// ***************************Btns
 
 const toggles = document.querySelectorAll(".toggle");
 const good = document.querySelector("#good");
@@ -63,3 +63,5 @@ function doTheTrick(theClickedOne) {
     }
   }
 }
+
+// ********************* Volums

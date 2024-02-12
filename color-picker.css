@@ -56,6 +56,8 @@
   transition: background 0.3s;
   background: url(https://upload.wikimedia.org/wikipedia/commons/8/8a/Color_circle_%28RGB%29.svg)
     center / contain no-repeat;
+  box-shadow: 0 0 0 1px var(--pcr-color), 0 0 0 3px var(--pcr-color);
+
   border-radius: 10em;
 }
 .pickr .pcr-button.clear {

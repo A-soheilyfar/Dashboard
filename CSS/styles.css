@@ -2,10 +2,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 :root {
-  --darker-color: #222831;
+  /* --darker-color: #222831;
   --dark-color: #393e46;
   --main-color: #00adb5;
   --secondry-color: #00fff5;
+*/
+
+  /* --darker-color: #1b0044;
+  --dark-color: #5727a3;
+  --main-color: #9153f4;
+  --secondry-color: #d6c5f0; */
+
+  /* --darker-color: #3a1078;
+  --dark-color: #4e31aa;
+  --main-color: #2f58cd;
+  --secondry-color: #3795bd; */
+
+  --darker-color: #001f3f;
+  --dark-color: #083358;
+  --main-color: #0d63a5;
+  --secondry-color: #ffd717;
 }
 * {
   box-sizing: border-box;
@@ -17,11 +33,13 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
+  /* background-color: var(--dark-color); */
   font-family: Roboto;
 }
-
+/* btns */
 .btns {
-  height: 200px;
+  margin-top: 10px;
+  padding: 20px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -29,21 +47,11 @@ body {
   gap: 20px;
   justify-content: center;
   align-items: center;
+  box-shadow: inset 0 0 10px 5px var(--dark-color);
+  backdrop-filter: blur(5px);
+  /* background-color: var(--dark-color); */
+  border-radius: 20px;
 }
-
-.btn {
-  border-radius: 5px;
-  width: 100px;
-  height: 30px;
-  border: none;
-  box-shadow: 1px 5px 10px var(--main-color);
-}
-
-.btn:hover {
-  box-shadow: 1px 5px 20px var(--secondry-color);
-}
-
-/* btns */
 
 .toggle-container {
   align-items: center;
@@ -88,6 +96,11 @@ body {
   animation: slideOn 0.3s linear forwards;
 }
 
+.btn-text {
+  color: var(--secondry-color);
+  text-shadow: 0px 0px 10px var(--darker-color);
+}
+
 @keyframes slideOn {
   0% {
     transform: translateX(0) scale(1);
@@ -115,12 +128,15 @@ body {
 
 /* Tables */
 .color-table {
+  backdrop-filter: blur(5px);
   position: relative;
-  box-shadow: inset 5px 5px 10px 10px var(--darker-color);
+  box-shadow: inset 0 0 10px 5px var(--dark-color);
   display: flex;
   flex-direction: column;
   justify-content: baseline;
   align-items: center;
+  /* background-color: var(--dark-color); */
+  border-radius: 20px;
 }
 .text-color {
   display: block;
@@ -131,3 +147,5 @@ body {
 .pickr {
   padding-bottom: 50px;
 }
+
+/* *******************************Volume ***************************/
